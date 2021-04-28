@@ -1,0 +1,35 @@
+/*	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+*/
+/*Цвет основного текста: #212121*/
+/*Вторичный цвет текста: #757575*/
+/*Белый цвет текста и хедера: #FFFFFF*/
+/*Цвет акцента: #2196F3*/
+/*Цвет бг секций: 1)#F5F4FA, 2)#E5E5E5*/
+/*Цвет футера и блок герой: #2F303A*/
+
+body {
+  /*Типографика*/
+  font-family: "Roboto", sans-serif;
+  /*Отображение*/
+  background-color: #f5f4fa;
+  color: #212121;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: #212121;
+  text-decoration: none;
+}
+/* site-nav */
+.site-nav .nav-link {
+  color: #212121;
+  text-decoration: none;
+}
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+  color: #2196f3;
+}
