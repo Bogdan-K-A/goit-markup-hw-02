@@ -1,35 +1,198 @@
 /*	font-family: 'Raleway', sans-serif;
 	font-family: 'Roboto', sans-serif;
 */
-/*Цвет основного текста: #212121*/
-/*Вторичный цвет текста: #757575*/
-/*Белый цвет текста и хедера: #FFFFFF*/
-/*Цвет акцента: #2196F3*/
-/*Цвет бг секций: 1)#F5F4FA, 2)#E5E5E5*/
+/*Цвет основного текста: #757575*/
+/*Вторичный цвет текста: #212121*/
+/*Белый : #FFFFFF*/
+/*Акцент: #2196F3*/
+/*основной цвет бг: #F5F4FA*/
+/*Вторичный цвет бг: #E5E5E5*/
 /*Цвет футера и блок герой: #2F303A*/
 
-body {
-  /*Типографика*/
-  font-family: "Roboto", sans-serif;
-  /*Отображение*/
-  background-color: #f5f4fa;
-  color: #212121;
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #f5f4fa;
+  --section-color: #e5e5e5;
+  --wight-color: #ffffff;
+  --footer-color: #2f303a;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--title-text-color);
+}
+/* Селектор для устранения маркеров от списков ul*/
 .list {
   list-style: none;
 }
 
-.logo {
-  color: #212121;
+/* Начало оформления Header*/
+/* Header оборачивает все блоки в нутри хедера*/
+.header {
+}
+
+/* WebStudio оформление логотипа в хедере и в футере*/
+.logo,
+.footer-logo {
+  /*Типографика*/
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  /*Отображение*/
+  color: var(--title-text-color);
   text-decoration: none;
 }
-/* site-nav */
-.site-nav .nav-link {
-  color: #212121;
+
+.footer-logo {
+  color: var(--primary-bg-color);
+}
+
+.web {
+  color: var(--accent-color);
+}
+
+/* Menu Nav оформление навигационных ссылок */
+.nav,
+.nav-link {
+  /*Типографика*/
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  /*Отображение*/
+  color: var(--title-text-color);
   text-decoration: none;
 }
-.site-nav .nav-link:hover,
-.site-nav .nav-link:focus {
-  color: #2196f3;
+
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: var(--accent-color);
 }
+
+.nav .nav-link.current {
+  color: var(--accent-color);
+}
+
+/*Contacts оформление контактных ссылок*/
+.header-link {
+  /*Типографика*/
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  /*Отображение*/
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+/*Header ==============end================*/
+
+/*Main начало оформления основного контента на странице*/
+
+/*Секция Hero содержит бекграунд, заголовок и кнопку*/
+.hero {
+  background-color: var(--footer-color);
+}
+
+.hero-title {
+  /*Расположение*/
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  /*Типографика*/
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  /*Отображение*/
+  color: var(--wight-color);
+}
+
+/* Button Оформление кнопки */
+.btn {
+  /*Типографика*/
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+
+  /*Отображение*/
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--wight-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  /*Прочее*/
+  cursor: pointer;
+}
+/*Hero ==============end================*/
+
+/*Sectin оформление заголовков и текста*/
+.section .section-title {
+  color: var(--title-text-color);
+}
+
+.section-title {
+}
+
+.title {
+}
+
+.text {
+}
+
+.team-title {
+}
+/*Section ==============end================*/
+
+/*Main ==============end================*/
+
+/* Начало оформления Footer*/
+/* footer оборачивает все блоки в нутри футера */
+.footer {
+  background-color: var(--footer-color);
+}
+
+/* Address Оборачивает контактную информацию компании*/
+.address-text {
+  /*Типографика*/
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  /*Отображение*/
+  color: var(--wight-color);
+}
+/*Оформление meil & tel в футере*/
+.address-link {
+  /*Типографика*/
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  /*Отображение*/
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+/*Footer ==============end================*/
