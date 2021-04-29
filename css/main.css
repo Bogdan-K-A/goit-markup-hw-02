@@ -21,7 +21,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary-bg-color);
+  background-color: var(--wight-color);
   color: var(--title-text-color);
 }
 /* Селектор для устранения маркеров от списков ul*/
@@ -145,7 +145,8 @@ body {
 /*Sectin оформление заголовков и текста*/
 .section,
 .section-title,
-.title {
+.title,
+.portfolio-title {
   color: var(--title-text-color);
 }
 
@@ -164,7 +165,8 @@ body {
 }
 
 .text,
-.team-text {
+.team-text,
+.portfolio-text {
   color: var(--primary-text-color);
 }
 
@@ -226,6 +228,9 @@ body {
 
 /*=================================================Оформление страницы портфолио =========================================================*/
 /* filters */
+.portfolio-mein {
+  background-color: var(--wight-color);
+}
 .filter-btn {
   font-weight: bold;
   font-size: 16px;
@@ -235,9 +240,28 @@ body {
   height: 38px;
   background: var(--primary-bg-color);
   border-radius: 4px;
+  border: 0;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--wight-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
