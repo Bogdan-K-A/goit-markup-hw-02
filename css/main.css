@@ -153,6 +153,7 @@ body {
 }
 
 .text {
+  color: var (--primary-text-color);
 }
 
 .team-title {
