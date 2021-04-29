@@ -186,7 +186,6 @@ body {
   letter-spacing: 0.03em;
 }
 /*Section ==============end================*/
-
 /*Main ==============end================*/
 
 /* Начало оформления Footer*/
@@ -224,3 +223,21 @@ body {
   color: var(--accent-color);
 }
 /*Footer ==============end================*/
+
+/*=================================================Оформление страницы портфолио =========================================================*/
+/* filters */
+.filter-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+  height: 38px;
+  background: var(--primary-bg-color);
+  border-radius: 4px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--wight-color);
+}
