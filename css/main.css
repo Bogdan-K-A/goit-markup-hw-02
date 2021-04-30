@@ -1,191 +1,191 @@
-/*	font-family: 'Raleway', sans-serif;
-	font-family: 'Roboto', sans-serif;
-*/
-/*Цвет основного текста: #757575*/
-/*Вторичный цвет текста: #212121*/
-/*Белый : #FFFFFF*/
-/*Акцент: #2196F3*/
-/*основной цвет бг: #F5F4FA*/
-/*Вторичный цвет бг: #E5E5E5*/
-/*Цвет футера и блок герой: #2F303A*/
-
 :root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --primary-bg-color: #f5f4fa;
-  --section-color: #e5e5e5;
-  --wight-color: #ffffff;
-  --footer-color: #2f303a;
+	/* Цвет текста */
+	--primary-text-color: #212121;
+	--secondary-text-color: #757575;
+
+	/* Цвет выдиления ссылок и кнопок */
+	--accent-color: #2196f3;
+
+	/* Цвет для секций и кнопок */
+	--section-bg-color: #f5f4fa;
+
+	/* Основной белый цвет */
+	--primary-wight-color: #ffffff;
+
+	/* Цвет подвала */
+	--footer-color: #2f303a;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--wight-color);
-  color: var(--title-text-color);
+	font-family: "Roboto", sans-serif;
+	background-color: var(--primary-wight-color);
+	color: var(--primary-text-color);
+}
+
+/* Селектор наследующий шрифт для кнопки */
+button {
+	font-family: inherit;
 }
 /* Селектор для устранения маркеров от списков ul*/
 .list {
-  list-style: none;
+	list-style: none;
 }
 
 /* Начало оформления Header*/
-/* Header оборачивает все блоки в нутри хедера*/
-.header {
-  background-color: var(--wight-color);
-}
 
 /* WebStudio оформление логотипа в хедере и в футере*/
+.web {
+	color: var(--accent-color);
+}
+
 .logo,
 .footer-logo {
-  /*Типографика*/
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+	/*Типографика*/
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
 
-  /*Отображение*/
-  color: var(--title-text-color);
-  text-decoration: none;
+	/*Отображение*/
+	color: var(--primary-text-color);
+	text-decoration: none;
 }
 
 .footer-logo {
-  color: var(--primary-bg-color);
+	color: var(--primary-wight-color);
 }
 
-.web {
-  color: var(--accent-color);
-}
-
-/* Menu Nav оформление навигационных ссылок */
+/*Nav оформление навигационных ссылок */
 .nav,
 .nav-link {
-  /*Типографика*/
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+	/*Типографика*/
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
 
-  /*Отображение*/
-  color: var(--title-text-color);
-  text-decoration: none;
+	/*Отображение*/
+	color: var(--primary-text-color);
+	text-decoration: none;
 }
 
+/*Ссылки навигации в активном состоянии
+	эфект наведения и фокуса*/
 .nav .nav-link:hover,
 .nav .nav-link:focus {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
-
+/*Указывает пользователю текущюю страницу */
 .nav .nav-link.current {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 /*Contacts оформление контактных ссылок*/
 .header-link {
-  /*Типографика*/
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+	/*Типографика*/
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
 
-  /*Отображение*/
-  color: var(--primary-text-color);
-  text-decoration: none;
+	/*Отображение*/
+	color: var(--secondary-text-color);
+	text-decoration: none;
 }
-
+/*Ссылки контактов в активном состоянии
+	эфект наведения и фокуса*/
 .header-link:hover,
 .header-link:focus {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 /*Header ==============end================*/
 
 /*Main начало оформления основного контента на странице*/
-
-/*Секция Hero содержит бекграунд, заголовок и кнопку*/
-.hero {
-  background-color: var(--footer-color);
+/*Секция Hero содержит 
+	бекграунд, заголовок и кнопку*/
+.hero,
+.footer {
+	background-color: var(--footer-color);
 }
 
 .hero-title {
-  /*Расположение*/
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+	/*Расположение*/
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 
-  /*Типографика*/
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+	/*Типографика*/
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
 
-  /*Отображение*/
-  color: var(--wight-color);
+	/*Отображение*/
+	color: var(--primary-wight-color);
 }
 
 /* Button Оформление кнопки */
 .btn {
-  /*Типографика*/
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.06em;
+	/*Типографика*/
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
 
-  /*Отображение*/
-  width: 200px;
-  height: 50px;
-  background-color: var(--accent-color);
-  color: var(--wight-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+	/*Отображение*/
+	background-color: var(--accent-color);
+	color: var(--primary-wight-color);
 
-  /*Прочее*/
-  cursor: pointer;
+	/*Прочее*/
+	cursor: pointer;
 }
 /*Hero ==============end================*/
 
 /*Sectin оформление заголовков и текста*/
-.section,
-.section-title,
-.title,
-.portfolio-title {
-  color: var(--title-text-color);
+.section {
+	color: var(--primary-text-color);
 }
 
 .section-title {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
 }
 
 .title {
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.text,
-.team-text,
-.portfolio-text {
-  color: var(--primary-text-color);
+	font-size: 14px;
+	line-height: 1.4;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 .text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
+	/*Типографика*/
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 
-.team-title {
-  font-weight: 500;
+	/*Отображение*/
+	color: var(--secondary-text-color);
 }
+/* Оформление карточек команды */
+.cards-title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.cards-text {
+	/*Типографика*/
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.03em;
 
-.team-text,
-.team-title {
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
+	/*Отображение*/
+	color: var(--secondary-text-color);
 }
 /*Section ==============end================*/
 /*Main ==============end================*/
@@ -193,72 +193,73 @@ body {
 /* Начало оформления Footer*/
 /* footer оборачивает все блоки в нутри футера */
 .footer {
-  background-color: var(--footer-color);
+	background-color: var(--footer-color);
 }
 
 /* Address Оборачивает контактную информацию компании*/
 .address-text {
-  /*Типографика*/
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+	/*Типографика*/
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
 
-  /*Отображение*/
-  color: var(--wight-color);
+	/*Отображение*/
+	color: var(--primary-wight-color);
 }
+
 /*Оформление meil & tel в футере*/
 .address-link {
-  /*Типографика*/
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+	/*Типографика*/
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
 
-  /*Отображение*/
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+	/*Отображение*/
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
 }
-
+/* Активность ссылок при наведении */
 .address-link:hover,
 .address-link:focus {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 /*Footer ==============end================*/
 
 /*=================================================Оформление страницы портфолио =========================================================*/
-/* filters */
-.portfolio-mein {
-  background-color: var(--wight-color);
-}
-.filter-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
 
-  height: 38px;
-  background: var(--primary-bg-color);
-  border-radius: 4px;
-  border: 0;
+/* Оформление кнопок фильтра */
+.filter-btn {
+	/*Типографика*/
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+
+	/*Отображение*/
+	background: var(--section-bg-color);
+
+	/*Прочее*/
+	cursor: pointer;
 }
+/* Активность кнопок при наведении */
 .filter-btn:hover,
 .filter-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--wight-color);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+	background-color: var(--accent-color);
+	color: var(--primary-wight-color);
 }
-
+/* Оформление карточек галереи */
 .portfolio-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
 }
 .portfolio-text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+	/*Типографика*/
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.03em;
+	/*Отображение*/
+	color: var(--secondary-text-color);
 }
