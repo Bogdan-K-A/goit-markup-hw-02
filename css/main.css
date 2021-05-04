@@ -27,8 +27,10 @@ button {
 	font-family: inherit;
 }
 /* Селектор для устранения маркеров от списков ul*/
-.list {
+.list,
+.galeri-link {
 	list-style: none;
+	text-decoration: none;
 }
 
 /* Начало оформления Header*/
@@ -42,7 +44,7 @@ button {
 .footer-logo {
 	/*Типографика*/
 	font-family: "Raleway", sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.2;
 	letter-spacing: 0.03em;
@@ -127,7 +129,7 @@ button {
 /* Button Оформление кнопки */
 .btn {
 	/*Типографика*/
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
@@ -142,7 +144,8 @@ button {
 /*Hero ==============end================*/
 
 /*Sectin оформление заголовков и текста*/
-.section {
+.section.team {
+	background-color: var(--section-bg-color);
 	color: var(--primary-text-color);
 }
 
@@ -251,9 +254,12 @@ button {
 }
 /* Оформление карточек галереи */
 .portfolio-title {
+	/*Типографика*/
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	/*Отображение*/
+	color: var(--primary-text-color);
 }
 .portfolio-text {
 	/*Типографика*/
